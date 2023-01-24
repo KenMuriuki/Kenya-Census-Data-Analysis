@@ -1,0 +1,33 @@
+---
+title: "spatial data analysis"
+author: "Kennedy Muriuki"
+date: "2023-01-24"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Spatial Analysis of Kenya's Education data.
+
+This project conducts a spatial analysis of Kenya's Education census data. 
+
+```{r}
+library(devtools)
+library(rKenyaCensus)
+library(ggplot2)
+library(janitor)
+library(dplyr)
+```
+```{r}
+# loading the required data from the rKenyaCensus package
+edu <- V4_T2.2
+str(edu)
+
+```
+```{r}
+# show the data catalogue for the Kenya 2019 census data
+DataCatalogue
+```
+
